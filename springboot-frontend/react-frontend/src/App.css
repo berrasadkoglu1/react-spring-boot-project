@@ -1,0 +1,136 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.footer{
+  position:absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  text-align: center;
+  color: white;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body, html {
+	padding: 0;
+	margin: 0;
+}
+
+.account-container {
+	display: flex;
+}
+
+.sidebar {
+	flex-shrink: 0;
+	position: relative;
+	border-right: 1px solid #ddd;
+  margin-left: -25%;
+	width: 250px;
+	min-height: 100vh;
+	text-align: center;
+}
+
+.sidebar .menu {
+	padding: 0;
+}
+
+.sidebar .menu li {
+	list-style: none;
+}
+
+.sidebar .menu li a {
+	text-decoration: none;
+	color: black;
+	display: block;
+	padding: 20px;
+	border-bottom: 1px solid #ddd;
+}
+
+.sidebar .menu li a:hover {
+	background-color: #f4f4f4;
+}
+
+.sidebar .menu li:first-child a {
+	border-top: 1px solid #ddd;
+}
+
+.sidebar .sidebar-bottom {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	padding: 30px 50px;
+	justify-content: space-between;
+}
+
+.content {
+	min-width: 100vh;
+	overflow-y: auto;
+	flex: 1;
+	padding: 50px;
+}
+
+.accounts {
+	text-align: center;
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+	user-select: none;
+}
+
+.account {
+	display: none;
+}
+
+.account.active {
+	display: block;
+}
+
+.arrow {
+	padding: 10px;
+	cursor: pointer;
+}
+
+.account-title {
+	margin-top: 30px
+}
+
